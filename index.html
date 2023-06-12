@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YUIろいど</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>YUIろいど</h1>
+    </header>
+
+    <div name="output_area" id="output_area"></div>
+
+    <section class="content">
+      <ul id="chat-area">
+        <li>
+          <div class="balloon">
+            <img class="img-circle" src="yui.jpg" alt="image" />
+            <p class="talk">こんにちは！</p>
+          </div>
+        </li>
+        <li>
+          <div class="balloon">
+            <img class="img-circle" src="yui.jpg" alt="image" />
+            <p class="talk">システムの導入を検討している業務分野に関する製品情報をご紹介します。<br>例：経理、財務</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <input
+        id="msg-send"
+        class="msg-input"
+        type="text"
+        placeholder="メッセージ (Shift+Enterで送信)"
+      />
+      <button class="btn-submit" type="button" onclick="sendMessage()">
+        送信
+      </button>
+      &nbsp;
+      <button class="btn-init" type="button" onclick="init()">
+        チャットを初期化
+      </button>
+    </footer>
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
